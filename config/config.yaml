@@ -1,0 +1,12 @@
+input:
+  fpkm: "test_data/fpkm_matrix.csv"
+  metadata: "test_data/metadata.csv"
+
+params:
+  group_column: "condition"
+  control_level: "WT"
+  treatment_level: "KO"
+
+output:
+  table: "results/diff_expr_results.csv"
+  plot: "results/volcano_plot.png"
