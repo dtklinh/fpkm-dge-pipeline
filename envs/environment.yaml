@@ -5,7 +5,7 @@ channels:
   - defaults
 dependencies:
   - r-base=4.2
-  - r-limma
+  - bioconductor-limma
   - r-readr
   - r-dplyr
   - r-ggplot2
