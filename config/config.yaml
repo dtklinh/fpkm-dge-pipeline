@@ -1,12 +1,12 @@
 input:
-  fpkm: "test_data/fpkm_matrix.csv"
-  metadata: "test_data/metadata.csv"
+  fpkm: "test_data/ROR2_test/ROR2_fpkm_matrix.csv"
+  metadata: "test_data/ROR2_test/Metadata.csv"
 
 params:
-  group_column: "condition"
-  control_level: "WT"
-  treatment_level: "KO"
+  group_column: "shROR2_treatment"
+  control_level: "no"
+  treatment_level: "yes"
 
 output:
-  table: "results/diff_expr_results.csv"
-  plot: "results/volcano_plot.png"
+  table: "results/diff_expr_results_ROR2.csv"
+  plot: "results/volcano_plot_ROR2.png"

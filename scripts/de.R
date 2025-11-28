@@ -70,8 +70,8 @@ write_csv(res, args$output_table)
 # 5. Volcano Plot
 res <- res %>%
   mutate(diffexpressed = case_when(
-    logFC > 1 & adj.P.Val < 0.05 ~ "UP",
-    logFC < -1 & adj.P.Val < 0.05 ~ "DOWN",
+    logFC > 0.5 & adj.P.Val < 0.05 ~ "UP",
+    logFC < -0.5 & adj.P.Val < 0.05 ~ "DOWN",
     TRUE ~ "NO"
   ))
 
